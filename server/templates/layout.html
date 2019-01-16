@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+	body {
+		background-color: white;		
+		font-family: sans-serif;
+	}
+	.dashboard-game {
+		display: inline;
+		border: 1px solid blue;
+	}
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	table tr:nth-child(even) {
+	    background-color: #eee;
+	}
+	table tr:nth-child(odd) {
+    	background-color: #fff;
+	}	
+	thead {
+		font-weight: bold;
+	}
+
+</style>
+<title>{% block title %}{% endblock %}</title>
+</title>
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>

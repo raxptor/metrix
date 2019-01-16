@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}Sessions{% endblock %}
+{% block content %}
+<h1>Sessions</h1>
+Here are the recorded sesssions.
+<h3>Session list</h3>
+<table>
+	<thead><tr>
+		<td>Created</td>
+		<td>Session ID</td>
+		<td>Device</td>
+		<td>User</td>
+	</tr></thead>
+	{% for s in sessions %}
+	<tr><td>{{ s.created }}</td><td><a href="view/{{ s.id }}">{{s.id}}</a></td><td>{{ s.device }}</td><td>{{ s.user }}</td></tr>
+	{% endfor %}
+	<tbody></tbody>
+</table>
+{% endblock %}

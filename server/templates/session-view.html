@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block title %}Session{% endblock %}
+{% block content %}
+<h1>Session</h1>
+This is session {{ session.id }}
+<table>
+	<thead><tr>
+		<td>Line</td>
+		<td>When</td>
+		<td>Data</td>
+	</tr></thead>
+	{% for s in logs %}
+	<tr><td>{{ s.sequence }}</td><td>{{s.created}}</td><td>{{ s.logline}}</td></tr>
+	{% endfor %}
+	<tbody></tbody>
+</table>
+
+{% endblock %}

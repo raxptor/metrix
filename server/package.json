@@ -1,0 +1,24 @@
+{
+  "name": "metrix-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "finalhandler": "^0.4.1",
+    "node-gyp": "^3.6.2",
+    "node-router": "^0.1.5",
+    "pg": "^4.4.6",
+    "router": "^1.1.4",
+    "sqlite3": "^3.1.13",
+    "swig": "^1.4.2",
+    "uglify-js": "^2.6.1",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
